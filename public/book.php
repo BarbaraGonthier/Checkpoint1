@@ -66,7 +66,7 @@ $bribes = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-/** SHOW BY ID  */
+/** SHOW BY ID  
 
 $query = 'SELECT name, payment FROM bribe WHERE name LIKE :letter';
 $statement = $pdo->prepare($query);
@@ -76,6 +76,7 @@ $statement->execute();
 $bribesByLetter = $statement->fetch(PDO::FETCH_ASSOC);
 
 return $bribesByLetter;
+**/
 
 ?>
 
